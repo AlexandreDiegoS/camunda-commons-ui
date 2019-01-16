@@ -9,12 +9,10 @@ var tested = process.env.TESTED || '*';
 
 exports.config = {
 
-  //seleniumAddress: 'http://localhost:4444/wd/hub/',
-  /*directConnect: true,
-  untrackOutstandingTimeouts: true,*/
+  //directConnect: true,
   // The timeout for each script run on the browser. This should be longer
   // than the maximum time your application needs to stabilize between tasks.
-  allScriptsTimeout: 11000,
+  allScriptsTimeout: 61000,
 
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
@@ -66,7 +64,7 @@ exports.config = {
   */
 
   mochaOpts: {
-    timeout: 25000,
+    timeout: 60000,
     colors: true,
     reporter: 'spec',
     slow: 3000
