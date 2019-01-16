@@ -74,7 +74,7 @@ nodemon -w lib/widgets/ --exec "protractor ./test/protractor.conf.js"
 
 You can also run the tests on a single widget like that:
 ```
-TESTED=variable nodemon -w lib/widgets/ --exec "protractor ./test/protractor.conf.js"
+export TESTED=inline-field nodemon -w lib/widgets/ --exec "protractor ./test/protractor.conf.js"
 ```
 This will only run the `cam-widget-variable` tests.
 

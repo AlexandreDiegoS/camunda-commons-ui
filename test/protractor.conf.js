@@ -9,6 +9,9 @@ var tested = process.env.TESTED || '*';
 
 exports.config = {
 
+  //seleniumAddress: 'http://localhost:4444/wd/hub/',
+  /*directConnect: true,
+  untrackOutstandingTimeouts: true,*/
   // The timeout for each script run on the browser. This should be longer
   // than the maximum time your application needs to stabilize between tasks.
   allScriptsTimeout: 11000,
@@ -63,7 +66,7 @@ exports.config = {
   */
 
   mochaOpts: {
-    timeout: 15000,
+    timeout: 25000,
     colors: true,
     reporter: 'spec',
     slow: 3000
